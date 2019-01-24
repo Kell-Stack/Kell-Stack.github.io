@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  
 
   <style>
   body {
@@ -37,7 +36,6 @@
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
   }
-
   .bg-grey {
     background-color: #f6f6f6;
   }
@@ -59,7 +57,6 @@
     height: 100%;
     margin-bottom: 10px;
   }
-
   }
   .item h4 {
     font-size: 19px;
@@ -135,10 +132,8 @@
     font-size: 20px;
     margin-bottom: 20px;
     color: #981CEB;
-
   }
   
-
   }
   @media screen and (max-width: 768px) {
     .col-sm-4 {
@@ -168,20 +163,23 @@
       </button>
       <a class="navbar-brand" href="#myPage">KS</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right" role="navigation" aria-label="Main navigation"></ul>>
+    
+    <div class="collapse navbar-collapse" id="myNavbar" >
+        <div role="navigation" aria-label="Main navigation"> <!--ARIA 1-->
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#services">RESUME</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
+        </div>
     </div>
-    <main role="main"></main>  
   </div>
-</nav>
+</nav> <!-- closes nav-->
 
 <div id="percent-loaded" role="progressbar" aria-valuenow="75" 
-     aria-valuemin="0" aria-valuemax="100"></div>
+     aria-valuemin="0" aria-valuemax="100"></div> <!--ARIA 2-->
+
 
 <div class="jumbotron text-center">
   <h1>Kelly Sousa</h1> 
@@ -189,8 +187,6 @@
 </div>
 
 
-<div>
-    <div>
 <!-- Container (About Section) -->
 <div id="about" class="container">
   <div class="row">
@@ -201,10 +197,9 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div> <!-- end of col -->
 
-<!-- ADD ARIA ASIDE+FIGURE TAG -->
-          <div id="circlePic" class="col-sm-4-right" role="navigation" aria-label=""></div>>
+
+          <div id="circlePic" class="col-sm-4-right">
             <h2>"circle pic to the right"</h2><br>
-            <img href="#" alt="Kelly's photo">
           </div> <!-- end of col -->
 
           
@@ -214,7 +209,7 @@
 <!-- Container (Portfolio Section) -->
 
     <div class="bg-grey"> 
-        <div class="col-sm-12  .col-md-8" >
+        <div class="col-sm-12">
           <div class="row">
               <h2>Portfolio</h2><br>
               <h4>What we have created</h4>
@@ -225,7 +220,7 @@
 
 <!-- Container (Resume Section) -->
 <div id="resume" class="container">
-  <div>  </div>
+  <div> Container </div>
     <div class="row">
   
       <div class="col-sm-12">
@@ -241,8 +236,3 @@
   <p>Twitter @Kell_Stack </p>
   <p>GitHub /Kell-Stack</p>
 </footer>
-
-
-
-</body>
-</html>
